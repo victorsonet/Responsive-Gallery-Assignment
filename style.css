@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    padding: 2.5rem;
+}
+
+.title {
+    font-weight: 400;
+}
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e8e6e9;
+    border-radius: .5rem;
+}
+
+.card_img {
+    background-color: #6ca2d9;
+    width: 100%;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.card_text {
+    padding: 1rem;
+    font-weight: 300;
+}
+.text {
+    margin-top: 3.5rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 601px) {
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+    }
+    
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
